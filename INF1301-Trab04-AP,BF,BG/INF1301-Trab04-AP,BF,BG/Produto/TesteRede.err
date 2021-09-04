@@ -1,0 +1,14 @@
+testerede.c
+rede.c
+..\Fontes\TesteRede\rede.c(472) : warning C4101: 'condUser' : unreferenced local variable
+c:\users\andre\projetosvs\inf1301-trab04-ap,bf,bg\fontes\testerede\rede.c(679) : warning C4701: potentially uninitialized local variable 'pUsuario2' used
+c:\users\andre\projetosvs\inf1301-trab04-ap,bf,bg\fontes\testerede\rede.c(709) : warning C4701: potentially uninitialized local variable 'condMsg' used
+Microsoft (R) Incremental Linker Version 10.00.40219.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/OUT:..\Produto\TRAB4-6.exe 
+/INCREMENTAL:NO 
+/MACHINE:IX86 
+testerede.obj rede.obj lista.obj usuario.obj mensagem.obj 
+grafo.obj 
+ArcaboucoTeste.lib 

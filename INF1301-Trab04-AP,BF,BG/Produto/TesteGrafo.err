@@ -1,0 +1,10 @@
+testgra.c
+grafo.c
+Microsoft (R) Incremental Linker Version 10.00.40219.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/OUT:..\Produto\TRAB4-2.exe 
+/INCREMENTAL:NO 
+/MACHINE:IX86 
+testgra.obj grafo.obj lista.obj 
+ArcaboucoTeste.lib 

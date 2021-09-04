@@ -1,0 +1,29 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: ..\produto\TRAB4-4.EXE
+!!!      Script de teste:     ..\scripts\TesteMensagem.script
+
+!!!    0  Linha:     1  // Script:    TesteMensagem.script 
+!!!    0  Linha:     2  // Autores:   André Pessanha,Bianca Gomes e Bianca Fragoso 
+!!!    0  Linha:     3  // Data:      06/dez/2017 
+!!!    0  Linha:     4  // Propósito: Testar superficialmente o módulo Mensagem // 
+    6  == Inicializar valores
+   32  == Criar Mensagem
+   37  == Verificar sem mensagens
+   41  == Enviar Mensagem
+   47  == Conta Mensagem
+   51  == Ir no inicio e Avancar no registro de Mensagens
+   57  == Avancar ate o fim do Registro
+   63  == Obter Mensagem
+   67  == Testes com mensagens enviadas
+   76  == Testes com mensagens recebidas
+
+!!! Número de linhas lidas:          84
+!!! Número de casos de teste:        10
+!!! Número comandos corretos:        55
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0

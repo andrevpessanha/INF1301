@@ -1,0 +1,41 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: ..\produto\TRAB4-1.EXE
+!!!      Script de teste:     ..\scripts\TesteLista.script
+
+!!!    0  Linha:     1  // Script:    TesteLista.script 
+!!!    0  Linha:     2  // Autor:     Arndt von Staa 
+!!!    0  Linha:     3  // Data:      02/abr/2008 
+!!!    0  Linha:     4  // Propósito: Testar superficialmente o módulo lista genérica duplamente encadeada 
+!!!    0  Linha:     5  //  Alteração: mudar string 
+    7  == Inicializar valores
+   42  == Criar a lista 0
+   45  == Verificar ObterValor relativo a lista vazia
+   48  == Inserir elemento em lista vazia
+   52  == Inserir elemento após primeiro
+   56  == Inserir elemento antes do último
+   60  == Excluir elemento do meio
+   64  == Excluir elemento do início
+   68  == Excluir elemento final, único
+   72  == Ver se a lista ficou vazia
+   75  == Destruir a lista
+   78  == Criar uma lista com quatro elementos
+   85  == Verificar a lista de trás para diante
+   95  == Verificar a lista de frente para trás
+  105  == Verificar a lista andando demais de trás para diante
+  109  == Verificar a lista andando demais de frente para trás
+  113  == Testa Conta Elementos
+  116  == Destruir a lista
+  119  == Criar uma lista e testar quantidade elementos
+  130  == Destruir a lista
+!!!    0  Linha:   136  // fim 
+
+!!! Número de linhas lidas:         136
+!!! Número de casos de teste:        20
+!!! Número comandos corretos:        80
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0

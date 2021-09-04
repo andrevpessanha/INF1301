@@ -1,0 +1,79 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: ..\produto\TRAB4-5.EXE
+!!!      Script de teste:     ..\scripts\TesteContador.script
+
+!!!    0  Linha:     1  // Script:    TesteGrafo.script 
+!!!    0  Linha:     2  // Autores:   Andre Pessanha,Bianca Gomes e Bianca Fragoso 
+!!!    0  Linha:     3  // Data:      05/dez/2017 
+!!!    0  Linha:     4  // Proposito: Testar superficialmente o modulo grafo não dirigido generico com cabeca// 
+    6  == Inicializar valores
+   62  == Iniciar contagem
+   69  == Testando todas as funcoes com Grafo NULL
+  101  == Testando todas as funcoes com Grafo != NULL
+  106  == Excluir Aresta de Grafo Vazio
+  109  == Destruir Grafo Vazio
+  113  == Destruir Grafo Nao Vazio
+>>>    1  Linha:   116  Valor de contagem errado. Deveria ser: 2  É: 0
+>>>    2  Linha:   117  Não é comando recuperar:  =contagemcontador "GRA_InserirVertice-pr0" 1
+>>>    3  Linha:   118  Comando de teste ignorado:  =contagemcontador "GRA_InserirVertice-pr1" 1
+>>>    4  Linha:   119  Comando de teste ignorado:  =contagemcontador "GRA_InserirVertice-if2" 1
+>>>    5  Linha:   120  Comando de teste ignorado:  =contagemcontador "GRA_InserirVertice-pr2" 1
+>>>    6  Linha:   121  Comando de teste ignorado:  =destruirgrafo Grafo0 pNULL
+>>>    7  Linha:   122  Comando de teste ignorado:  =contagemcontador  "GRA_DestruirGrafo"  3
+>>>    8  Linha:   123  Comando de teste ignorado:  =contagemcontador "GRA_DestruirGrafo-pr0" 2
+>>>    9  Linha:   124  Comando de teste ignorado:  =contagemcontador "GRA_DestruirGrafo-if1" 2
+  126  == Excluir vértice corrente
+>>>   10  Linha:   131  Valor de contagem errado. Deveria ser: 2  É: 0
+>>>   11  Linha:   132  Não é comando recuperar:  =contagemcontador   "GRA_ExcluiVerticeCorrente-pr0" 2
+>>>   12  Linha:   133  Comando de teste ignorado:  =contagemcontador   "GRA_ExcluiVerticeCorrente-pr1" 1
+>>>   13  Linha:   134  Comando de teste ignorado:  =contagemcontador   "GRA_ExcluiVerticeCorrente-if4" 1
+  136  ==Inserir aresta em vertice que nao existe
+>>>   14  Linha:   137  Erro nos parâmetros do comando:  =criargrafo Grafo0
+>>>   15  Linha:   139  Comando de teste ignorado:  =insevertice Grafo0 id1 nome1 cidade1 data1 email1 vert1 1 OK
+>>>   16  Linha:   140  Comando de teste ignorado:  =insearestcorr Grafo0 id2 VerticeNExiste
+>>>   17  Linha:   141  Comando de teste ignorado:  =insevertice Grafo0 id2 nome2 cidade2 data2 email2 vert2 2 OK
+>>>   18  Linha:   142  Comando de teste ignorado:  =excluiraresta Grafo0 id1 id2 ArestaNExiste
+>>>   19  Linha:   143  Comando de teste ignorado:  =insearestcorr Grafo0 id1 OK
+>>>   20  Linha:   144  Comando de teste ignorado:  =insearestcorr Grafo0 id1 ArestaExiste
+>>>   21  Linha:   145  Comando de teste ignorado:  =excluiraresta Grafo0 id1 id1 ArestaNExiste
+>>>   22  Linha:   146  Comando de teste ignorado:  =excluiraresta Grafo0 id4 id2 VerticeNExiste
+!!!   22  Linha:   147  //=excluiraresta Grafo0 id2 id4 VerticeNExiste 
+>>>   23  Linha:   148  Comando de teste ignorado:  =excluiraresta Grafo0 id1 id2 OK
+  151  == Obter Valor corrente
+>>>   24  Linha:   155  Valor de contagem errado. Deveria ser: 1  É: 0
+  157  == Ir inicio Grafo
+>>>   25  Linha:   160  Valor de contagem errado. Deveria ser: 1  É: 0
+>>>   26  Linha:   161  Não é comando recuperar:  =contagemcontador   "GRA_IrInicio-pr1" 1
+  163  == Avancar vertice corrente ate fim
+>>>   27  Linha:   165  Valor de contagem errado. Deveria ser: 1  É: 0
+>>>   28  Linha:   166  Não é comando recuperar:  =contagemcontador   "GRA_AvancarVerticeCorrente-pr1" 1
+>>>   29  Linha:   167  Comando de teste ignorado:  =contagemcontador   "GRA_AvancarVerticeCorrente-pr2" 1
+>>>   30  Linha:   168  Comando de teste ignorado:  =avancarvertcorr Grafo2 FimGrafo
+>>>   31  Linha:   169  Comando de teste ignorado:  =contagemcontador "GRA_AvancarVerticeCorrente-if2" 1
+>>>   32  Linha:   170  Comando de teste ignorado:  =obtemarestcorr Grafo2 pNULL
+>>>   33  Linha:   171  Comando de teste ignorado:  =contagemcontador "GRA_ObtemArestasVerticeCorrente-pr0" 1
+  173  == Avancar Vertice Corrente Grafo vazio
+>>>   34  Linha:   177  Valor de contagem errado. Deveria ser: 1  É: 0
+  179  == Verificar Vertice Existe com Grafo Vazio
+>>>   35  Linha:   181  Valor de contagem errado. Deveria ser: 1  É: 0
+  183  == Ir para o inicio com Grafo Vazio
+>>>   36  Linha:   185  Valor de contagem errado. Deveria ser: 1  É: 0
+  187  == Excluir vertice corrente com grafo com 2 vertices
+>>>   37  Linha:   191  Valor de contagem errado. Deveria ser: 1  É: 0
+  194  == Incluir arestas e excluir
+  201  == Verificar vertice que nao existe
+  206  == Verificar vertice que existe
+  210  == Terminar contagem
+!!!   37  Linha:   212  //=verificarcontagens  0 
+  215  == Finalizando contagem
+
+!!! Número de linhas lidas:         233
+!!! Número de casos de teste:        21
+!!! Número comandos corretos:        93
+!!! Número de falhas encontradas:    37
+
+!!! Foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0

@@ -1,0 +1,29 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: ..\produto\TRAB4-3.EXE
+!!!      Script de teste:     ..\scripts\TesteUsuario.script
+
+!!!    0  Linha:     1  // Script:    TesteUsuario.script 
+!!!    0  Linha:     2  // Autores:   André Pessanha,Bianca Gomes e Bianca Fragoso 
+!!!    0  Linha:     3  // Data:      01/dec/2017 
+!!!    0  Linha:     4  // Propósito: Testar superficialmente o módulo usuario // 
+    6  == Inicializar valores
+   56  == Cria o Usuario
+   62  == Alterar Usuario
+   68  == Preencher dados
+   72  == Obter Lista Msgs
+   76  == Obter id do Usuario
+   80  == Destruir Usuario
+   85  == Checar String
+   90  == Checar Email
+   96  == Checar Data de nascimento
+
+!!! Número de linhas lidas:         101
+!!! Número de casos de teste:        10
+!!! Número comandos corretos:        68
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0

@@ -1,0 +1,6 @@
+/OUT:..\produto\TRAB4-5.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+grafo.obj  testgra.obj  lista.obj  
+ArcaboucoTeste.lib
+

@@ -1,0 +1,64 @@
+testgra.c
+grafo.c
+Microsoft (R) Incremental Linker Version 10.00.40219.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/OUT:..\Produto\TRAB4-2.exe 
+/INCREMENTAL:NO 
+/MACHINE:IX86 
+testgra.obj grafo.obj lista.obj 
+ArcaboucoTeste.lib 
+Microsoft (R) Incremental Linker Version 10.00.40219.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/OUT:..\produto\TRAB4-5.exe 
+/INCREMENTAL:NO 
+/MACHINE:IX86 
+grafo.obj testgra.obj lista.obj 
+ArcaboucoTeste.lib 
+testlis.c
+lista.c
+Microsoft (R) Incremental Linker Version 10.00.40219.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/OUT:..\Produto\TRAB4-1.exe 
+/INCREMENTAL:NO 
+/MACHINE:IX86 
+testlis.obj lista.obj 
+ArcaboucoTeste.lib 
+testmen.c
+Microsoft (R) Incremental Linker Version 10.00.40219.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/OUT:..\Produto\TRAB4-4.exe 
+/INCREMENTAL:NO 
+/MACHINE:IX86 
+testmen.obj mensagem.obj lista.obj 
+ArcaboucoTeste.lib 
+testerede.c
+rede.c
+..\Fontes\TesteRede\rede.c(472) : warning C4101: 'condUser' : unreferenced local variable
+c:\users\andre\projetosvs\inf1301-trab04-ap,bf,bg\fontes\testerede\rede.c(679) : warning C4701: potentially uninitialized local variable 'pUsuario2' used
+c:\users\andre\projetosvs\inf1301-trab04-ap,bf,bg\fontes\testerede\rede.c(709) : warning C4701: potentially uninitialized local variable 'condMsg' used
+Microsoft (R) Incremental Linker Version 10.00.40219.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/OUT:..\Produto\TRAB4-6.exe 
+/INCREMENTAL:NO 
+/MACHINE:IX86 
+testerede.obj rede.obj lista.obj usuario.obj mensagem.obj 
+grafo.obj 
+ArcaboucoTeste.lib 
+testusu.c
+usuario.c
+..\Fontes\TesteUsuario\usuario.c(261) : warning C4018: '<' : signed/unsigned mismatch
+mensagem.c
+Microsoft (R) Incremental Linker Version 10.00.40219.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/OUT:..\Produto\TRAB4-3.exe 
+/INCREMENTAL:NO 
+/MACHINE:IX86 
+testusu.obj usuario.obj mensagem.obj lista.obj 
+ArcaboucoTeste.lib 
+

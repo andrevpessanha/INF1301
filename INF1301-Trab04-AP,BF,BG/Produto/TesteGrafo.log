@@ -1,0 +1,29 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: ..\produto\TRAB4-2.EXE
+!!!      Script de teste:     ..\scripts\TesteGrafo.script
+
+!!!    0  Linha:     1  // Script:    TesteGrafo.script 
+!!!    0  Linha:     2  // Autores:   André Pessanha,Bianca Gomes e Bianca Fragoso 
+!!!    0  Linha:     3  // Data:      14/out/2017 
+!!!    0  Linha:     4  // Propósito: Testar superficialmente o módulo grafo não dirigido genérico com cabeça// 
+    6  == Inicializar valores
+   70  == Cria o grafos
+   75  == Verificar Obter Valor do vertice corrente com o grafo vazio
+   77  == Inserir elemento em Grafo vazio
+   85  == Inserir e Excluir Aresta
+   98  == Inserir mais de um elemento em grafo
+  107  == Excluir vertice com aresta
+  120  == Percorrer os vertices
+  129  == Destruir o grafo
+  137  == Mais alguns testes
+
+!!! Número de linhas lidas:         149
+!!! Número de casos de teste:        10
+!!! Número comandos corretos:       112
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0

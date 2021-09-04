@@ -1,0 +1,233 @@
+// Script:    TesteGrafo.script
+// Autores:   Andre Pessanha,Bianca Gomes e Bianca Fragoso
+// Data:      05/dez/2017
+// Proposito: Testar superficialmente o modulo grafo não dirigido generico com cabeca//
+
+== Inicializar valores
+=declararparm   Grafo0  int 0
+=declararparm   Grafo1  int 1
+=declararparm   Grafo2  int 2
+=declararparm   Grafo3  int 3
+=declararparm   Grafo4  int 4
+=declararparm   Grafo5  int 5
+
+=declararparm   nome0  string "Aba"
+=declararparm   nome1  string "Ivana"
+=declararparm   nome2  string "Alberto"
+=declararparm   nome3  string "Logan"
+=declararparm   nome4  string "Genie"
+
+=declararparm   data0  string "20/10/1987"
+=declararparm   data1  string "02/03/2012"
+=declararparm   data2  string "23/02/1938"
+=declararparm   data3  string "12/12/1996"
+
+=declararparm   email0  string "njnabc@abcdefg"
+=declararparm   email1  string "jkvdkn@bdsbjdb"
+=declararparm   email2  string "fncdkifn@jbsdkbc"
+=declararparm   email3  string "jdfhkhc@hjdjshf"
+
+=declararparm   cidade0 string "Rio"
+=declararparm   cidade1 string "Petropolis"
+=declararparm   cidade2 string "Araruama"
+=declararparm   cidade3 string "Brasilia"
+
+=declararparm   id0  string "Abb"
+=declararparm   id1  string "Ivy"
+=declararparm   id2  string "Alb"
+=declararparm   id3  string "Log"
+=declararparm   id4  string "Gen"
+
+
+=declararparm   pNULL          int  0
+=declararparm   pNaoNULL       int  4
+
+=declararparm   vert0          int  0
+=declararparm   vert1		   int  1
+=declararparm   vert2		   int  2
+=declararparm   vert3		   int  3
+=declararparm   vert4		   int  4
+=declararparm   vert5		   int  5
+
+
+=declararparm   OK             int  0
+=declararparm   GrafoNExiste   int  1
+=declararparm   GrafoVazio     int  2
+=declararparm   VerticeNExiste int  3
+=declararparm   ArestaNExiste  int  4
+=declararparm   ArestaExiste   int  5
+=declararparm   FaltouMemoria  int  6
+=declararparm   FimGrafo       int  7
+
+== Iniciar contagem
+=inicializarcontadores  ""
+=lercontadores           "..\\scripts\\Grafo"
+=iniciarcontagem
+
+
+
+== Testando todas as funcoes com Grafo NULL
+=resetteste
+=zerartodoscontadores
+
+
+=destruirgrafo Grafo0 pNULL
+
+
+=insevertice Grafo0 id1 nome1 cidade1 data1 email1 vert1 1 GrafoNExiste
+
+
+=obtervalorcorr Grafo0 id1 nome1 cidade1 data1 email1 pNULL
+
+=insearestcorr Grafo0 id1 GrafoNExiste
+
+=excluiraresta Grafo0 id1 id2 GrafoNExiste
+
+=excluirvertcorr Grafo0 GrafoNExiste
+
+=verifvertice Grafo0 id0 GrafoNExiste
+
+
+=avancarvertcorr Grafo0 GrafoNExiste
+
+
+=irinicio Grafo0 GrafoNExiste
+
+
+=obtemarestcorr Grafo0 pNULL
+
+
+
+== Testando todas as funcoes com Grafo != NULL
+
+=criargrafo Grafo0
+
+
+== Excluir Aresta de Grafo Vazio
+=excluiraresta Grafo0 id1 id2 GrafoVazio
+
+== Destruir Grafo Vazio
+=destruirgrafo Grafo0 pNULL
+
+
+== Destruir Grafo Nao Vazio
+=criargrafo Grafo0 
+=insevertice Grafo0 id1 nome1 cidade1 data1 email1 vert1 1 OK
+=contagemcontador  "GRA_InserirVertice"  2
+=contagemcontador "GRA_InserirVertice-pr0" 1
+=contagemcontador "GRA_InserirVertice-pr1" 1
+=contagemcontador "GRA_InserirVertice-if2" 1
+=contagemcontador "GRA_InserirVertice-pr2" 1
+=destruirgrafo Grafo0 pNULL
+=contagemcontador  "GRA_DestruirGrafo"  3
+=contagemcontador "GRA_DestruirGrafo-pr0" 2
+=contagemcontador "GRA_DestruirGrafo-if1" 2
+
+== Excluir vértice corrente
+=criargrafo Grafo4
+=excluirvertcorr Grafo4 GrafoVazio
+=insevertice Grafo4 id1 nome1 cidade1 data1 email1 vert1 1 OK
+=excluirvertcorr Grafo4 OK
+=contagemcontador   "GRA_ExcluiVerticeCorrente-pr0" 2
+=contagemcontador   "GRA_ExcluiVerticeCorrente-pr0" 2
+=contagemcontador   "GRA_ExcluiVerticeCorrente-pr1" 1
+=contagemcontador   "GRA_ExcluiVerticeCorrente-if4" 1
+
+==Inserir aresta em vertice que nao existe
+=criargrafo Grafo0 
+=insearestcorr Grafo0 id4 GrafoVazio
+=insevertice Grafo0 id1 nome1 cidade1 data1 email1 vert1 1 OK
+=insearestcorr Grafo0 id2 VerticeNExiste
+=insevertice Grafo0 id2 nome2 cidade2 data2 email2 vert2 2 OK
+=excluiraresta Grafo0 id1 id2 ArestaNExiste
+=insearestcorr Grafo0 id1 OK
+=insearestcorr Grafo0 id1 ArestaExiste
+=excluiraresta Grafo0 id1 id1 ArestaNExiste
+=excluiraresta Grafo0 id4 id2 VerticeNExiste
+//=excluiraresta Grafo0 id2 id4 VerticeNExiste
+=excluiraresta Grafo0 id1 id2 OK
+
+
+== Obter Valor corrente
+=criargrafo Grafo2 
+=insevertice Grafo2 id1 nome1 cidade1 data1 email1 vert1 1 OK
+=obtervalorcorr Grafo2 id1 nome1 cidade1 data1 email1 pNaoNULL
+=contagemcontador   "GRA_ObterValorCorrente-pr0" 1
+
+== Ir inicio Grafo
+=insevertice Grafo2 id2 nome2 cidade2 data2 email2 vert2 2 OK
+=irinicio Grafo2 OK
+=contagemcontador   "GRA_IrInicio-pr0" 1
+=contagemcontador   "GRA_IrInicio-pr1" 1
+
+== Avancar vertice corrente ate fim
+=avancarvertcorr Grafo2 OK
+=contagemcontador  "GRA_AvancarVerticeCorrente-pr0" 1
+=contagemcontador   "GRA_AvancarVerticeCorrente-pr1" 1
+=contagemcontador   "GRA_AvancarVerticeCorrente-pr2" 1
+=avancarvertcorr Grafo2 FimGrafo
+=contagemcontador "GRA_AvancarVerticeCorrente-if2" 1
+=obtemarestcorr Grafo2 pNULL
+=contagemcontador "GRA_ObtemArestasVerticeCorrente-pr0" 1
+
+== Avancar Vertice Corrente Grafo vazio
+=criargrafo Grafo1 
+=excluirvertcorr Grafo1 GrafoVazio
+=avancarvertcorr Grafo1 GrafoVazio
+=contagemcontador "GRA_AvancarVerticeCorrente-if1" 1
+
+== Verificar Vertice Existe com Grafo Vazio
+=verifvertice Grafo1 id1 VerticeNExiste
+=contagemcontador "GRA_VerificaVerticeExiste-if1" 1
+
+== Ir para o inicio com Grafo Vazio
+=irinicio Grafo1 GrafoVazio
+=contagemcontador "GRA_IrInicio-if1" 1
+
+== Excluir vertice corrente com grafo com 2 vertices
+=insevertice Grafo1 id1 nome1 cidade1 data1 email1 vert1 1 OK
+=insevertice Grafo1 id2 nome2 cidade2 data2 email2 vert2 2 OK
+=excluirvertcorr Grafo1 OK
+=contagemcontador "GRA_ExcluiVerticeCorrente-else0" 1
+
+
+== Incluir arestas e excluir
+=criargrafo Grafo5 
+=insearestcorr  Grafo5 id2 GrafoVazio
+=insevertice Grafo5 id1 nome1 cidade1 data1 email1 vert1 1 OK
+=insevertice Grafo5 id2 nome2 cidade2 data2 email2 vert2 2 OK
+=insearestcorr  Grafo5  id2 OK
+
+== Verificar vertice que nao existe
+=criargrafo Grafo3
+=insevertice Grafo3 id1 nome1 cidade1 data1 email1 vert1 1 OK
+=verifvertice Grafo3 id4 VerticeNExiste
+
+== Verificar vertice que existe
+=verifvertice Grafo3 id1 OK
+
+
+== Terminar contagem
+=pararcontagem
+//=verificarcontagens  0
+
+
+== Finalizando contagem
+=terminarcontadores
+
+ 
+
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+

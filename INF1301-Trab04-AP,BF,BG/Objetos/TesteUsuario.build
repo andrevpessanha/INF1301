@@ -1,0 +1,6 @@
+/OUT:..\Produto\TRAB4-3.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+testusu.obj  usuario.obj  mensagem.obj  lista.obj  
+ArcaboucoTeste.lib
+

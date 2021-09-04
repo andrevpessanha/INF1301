@@ -1,0 +1,146 @@
+GERADOR DE SCRIPT DE DIRETIVAS PARA MAKE
+   LES / Informática / PUC-Rio    Versão 6.00 (c) 2005
+
+Composição do construto: ..\composicao\TesteGrafo.comp
+
+   Nome do Construto:           TesteGrafo
+   Diretório base:              C:\Users\Andre\projetosVS\INF1301-Trab04-AP,BF,BG\composicao
+
+   Arquivo composição:          ..\composicao\TesteGrafo.comp
+   Arquivo plataforma:          gmake.parm
+
+   Arquivo diretivas MAKE:      TesteGrafo.make
+   Arquivo diretivas LINK:      TesteGrafo.build
+   Arquivo listagem:            TesteGrafo.list
+
+Módulos do construto: ..\composicao\TesteGrafo.comp
+
+   testgra.c
+   grafo.c
+   lista.c
+
+Estatísticas do construto
+
+   Estatísticas do arquivo: generico.h
+      Total linhas:             713
+      Linhas de código:          59
+      Linhas de comentário:     572
+      Linhas em branco:          82
+   Arquivos de inclusão de que necessita
+      tst_espc.h
+   Arquivos em que é incluído
+      testgra.c
+
+   Estatísticas do arquivo: grafo.c
+      Total linhas:             490
+      Linhas de código:         304
+      Linhas de comentário:     110
+      Linhas em branco:          94
+   Arquivos de inclusão de que necessita
+      grafo.h
+      lista.h
+
+   Estatísticas do arquivo: grafo.h
+      Total linhas:             351
+      Linhas de código:          36
+      Linhas de comentário:     277
+      Linhas em branco:          38
+   Arquivos de inclusão de que necessita
+      lista.h
+   Arquivos em que é incluído
+      grafo.c
+      testgra.c
+
+   Estatísticas do arquivo: lerparm.h
+      Total linhas:             291
+      Linhas de código:          36
+      Linhas de comentário:     188
+      Linhas em branco:          67
+   Arquivos em que é incluído
+      testgra.c
+
+   Estatísticas do arquivo: lista.c
+      Total linhas:             575
+      Linhas de código:         296
+      Linhas de comentário:     143
+      Linhas em branco:         155
+   Arquivos de inclusão de que necessita
+      lista.h
+
+   Estatísticas do arquivo: lista.h
+      Total linhas:             366
+      Linhas de código:          37
+      Linhas de comentário:     278
+      Linhas em branco:          52
+   Arquivos em que é incluído
+      grafo.c
+      grafo.h
+      lista.c
+      testgra.c
+
+   Estatísticas do arquivo: testgra.c
+      Total linhas:             424
+      Linhas de código:         247
+      Linhas de comentário:      78
+      Linhas em branco:         112
+   Arquivos de inclusão de que necessita
+      generico.h
+      grafo.h
+      lerparm.h
+      lista.h
+      tst_espc.h
+
+   Estatísticas do arquivo: tst_espc.h
+      Total linhas:             228
+      Linhas de código:          23
+      Linhas de comentário:     185
+      Linhas em branco:          20
+   Arquivos em que é incluído
+      generico.h
+      testgra.c
+
+Totais por tipo de arquivo
+
+  Tipo: h        Path: ..\Fontes\TesteGrafo
+         Total linhas do tipo:      1949
+         Linhas de código:           191
+         Linhas de comentário:      1500
+         Linhas em branco:           259
+         Arquivos deste tipo:          5
+
+  Tipo: obj      Path: ..\Objetos
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: err      Path: ..\Produto
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: DEFAULT  Path: ..\Fontes\TesteGrafo
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: c        Path: ..\Fontes\TesteGrafo
+         Total linhas do tipo:      1489
+         Linhas de código:           847
+         Linhas de comentário:       331
+         Linhas em branco:           361
+         Arquivos deste tipo:          3
+
+Totais para todo o construto TesteGrafo
+
+   Total linhas:              3438
+   Linhas de código:          1038
+   Linhas de comentário:      1831
+   Linhas em branco:           620
+   Arquivos processados:         8
+

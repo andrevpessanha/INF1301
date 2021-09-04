@@ -1,0 +1,26 @@
+**********************************************
+* TRABALHO DE PROGRAMAÇÃO MODULAR - RELATÓRIO*
+**********************************************
+
+*****************************************
+* Aluna: Bianca Gomes			*
+* Turma: 3WA (Prof. Alessandro)		*
+* PUC-Rio - Depto. de Informática	*
+*****************************************
+
+*********************************************************************
+Data 	  Horas Trabalhadas  Tipo Tarefa   Descrição da Tarefa Realizada
+29/10/17	6h	   Codificar módulo     Continuação do desenvolvimento do Usuario
+01/11/17	2h	   Codificar módulo     Continuação do desenvolvimento do Usuario
+03/11/17	2h	   Codificar módulo     Continuação do desenvolvimento do Usuario
+13/11/17	2h	   Codificar módulo     Continuação do desenvolvimento da Mensagem
+18/11/17	3h		Estudo		Estudo sobre instrumentação 
+02/12/17	5h	   Codificar módulo	Codificar e revisar módulo TESTUSU.c
+06/12/17	3h	   Codificar módulo	Codificar e revisar módulo TESTUSU.c
+06/12/17	6h	   Codificar módulo	finalizar módulo TESTUSU.c e Codificar e finalizar modulo TESTMEN.c 
+06/12/17	4h	Redigir script de teste Redigir script de teste para Usuario para complemetar os já feitos pelos integrantes do grupo e criar script de teste para Mensagem
+06/12/17	2h	Revisar código de módulo Revisão do desenvolvimento do Usuario 
+07/12/17	7h	Revisar código de módulo Revisão do desenvolvimento do Grafo 
+07/12/17	4h	Redigir script de teste  Redigir script de teste para Grafo para complemetar os já feitos pelos integrantes do grupo 
+07/12/17	10h	Realizar e Revisar       Realizar testes e revisar código de módulo 
+07/12/17	6h	Realização de Testes	 Realização dos testes finais com instrumentacao assim como últimas correções

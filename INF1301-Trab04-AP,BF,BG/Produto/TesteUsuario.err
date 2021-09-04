@@ -1,0 +1,12 @@
+testusu.c
+usuario.c
+..\Fontes\TesteUsuario\usuario.c(261) : warning C4018: '<' : signed/unsigned mismatch
+mensagem.c
+Microsoft (R) Incremental Linker Version 10.00.40219.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/OUT:..\Produto\TRAB4-3.exe 
+/INCREMENTAL:NO 
+/MACHINE:IX86 
+testusu.obj usuario.obj mensagem.obj lista.obj 
+ArcaboucoTeste.lib 

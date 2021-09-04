@@ -1,0 +1,159 @@
+// Script:    TesteDeturpaArvore-1.script
+// Autores:   Andre Pessanha,Bianca Gomes e Bianca Fragoso
+// Data:      05/dez/2017
+// Proposito: Testar superficialmente o modulo grafo não dirigido generico com cabeca//
+//
+== Inicializar valores
+=declararparm   Grafo0  int 0
+=declararparm   Grafo1  int 1
+=declararparm   Grafo2  int 2
+=declararparm   Grafo3  int 3
+=declararparm   Grafo4  int 4
+
+=declararparm   nome0  string "Aba"
+=declararparm   nome1  string "Ivana"
+=declararparm   nome2  string "Alberto"
+=declararparm   nome3  string "Logan"
+=declararparm   nome4  string "Genie"
+
+=declararparm   data0  string "20/10/1987"
+=declararparm   data1 string  "02/03/2012"
+=declararparm   data2 string "23/02/1938"
+=declararparm   data3  string "12/12/1996"
+
+=declararparm   email0  string "njnabc@abcdefg"
+=declararparm   email1 string  "jkvdkn@bdsbjdb"
+=declararparm   email2 string "fncdkifn@jbsdkbc"
+=declararparm   email3  string "jdfhkhc@hjdjshf"
+
+=declararparm   cidade0 string "Rio"
+=declararparm   cidade1 string  "Petropolis"
+=declararparm   cidade2 string "Araruama"
+=declararparm   cidade3 string "Brasilia"
+
+=declararparm   id0  string "Abb"
+=declararparm   id1  string "Ivy"
+=declararparm   id2  string "Alb"
+=declararparm   id3  string "Log"
+=declararparm   id4  string "Gen"
+
+=declararparm   Indiceid0  int 0
+=declararparm   Indiceid1  int 1
+=declararparm   Indiceid2  int 2
+=declararparm   Indiceid3  int 3
+=declararparm   Indiceid4  int 4
+
+
+
+=declararparm   pNULL          int  0
+=declararparm   pNaoNULL       int  4
+
+=declararparm   vert0          int  0
+=declararparm   vert1		    int  1
+=declararparm   vert2		    int  2
+=declararparm   vert3		    int  3
+=declararparm   vert4		    int  4
+=declararparm   vert5		    int  5
+
+
+=declararparm   OK             int  0
+=declararparm   GrafoNExiste   int  1
+=declararparm   GrafoVazio     int  2
+=declararparm   VerticeNExiste int  3
+=declararparm   ArestaNExiste  int  4
+=declararparm   ArestaExiste   int  5
+=declararparm   FaltouMemoria  int  6
+=declaraparm    FimGrafo       int  7
+=declararparm   ErroDetectado   int  8
+
+
+=declararparm   DeturpaQtdVert                 int  1
+=declararparm   DeturpaVertCorrenteNulo        int  2
+=declararparm   DeturpaLisVertNulo             int  3
+=declararparm   DeturpaCabecaNulo              int  4
+=declararparm   DeturpaValorVertCorrenteNulo   int  5
+=declararparm   DeturpaEspacoCabeca   		   int  6
+=declararparm   DeturpaEspacoVerticeCorrente   int  7
+=declararparm   DeturpaTamCabeca      		   int  8
+=declararparm   DeturpaTamVerticeCorrente      int  9
+=declararparm   DeturpaPtCabecaNulo            int  10
+
+
+== Iniciar contadores de passagem
+=inicializarcontadores  "."
+
+== Criar Grafo
+=criargrafo  Grafo0   OK
+=insevertice Grafo0 id0 nome0 cidade0 data0 email0 vert0 0  OK
+=insevertice Grafo0 id1 nome1 cidade1 data1 email1 vert1 1  OK
+=insevertice Grafo0 id2 nome2 cidade2 data2 email2 vert2 2  OK
+
+//== Deturpar Quantidade de vertices
+//=deturpar Grafo0 DeturpaQtdVert
+
+//== Verificar Grafo (Detectar quantidade errada de vertices)
+//=verificargrafo Grafo0 ErroDetectado
+
+//== Deturpar Vertice Corrente 
+//=deturpar Grafo0 DeturpaVertCorrenteNulo
+
+//== Verificar Grafo (Detectar Vertice Corrente Nulo)
+//=verificargrafo Grafo0 ErroDetectado
+
+//== Deturpar Lista de Vertices
+//=deturpar Grafo0 DeturpaLisVertNulo
+
+//== Verificar Grafo (Detectar Lista de Vertices Nulo)
+//=verificargrafo Grafo0 ErroDetectado
+
+//== Deturpar Cabeca Grafo
+//=deturpar Grafo0 DeturpaCabecaNulo
+
+//== Verificar Grafo (Erro Tratado)
+//=verificargrafo Grafo0 OK
+
+//== Deturpar Valor do Vertice Corrente
+//=deturpar Grafo0 DeturpaValorVertCorrenteNulo
+
+//== Verificar Grafo  (Erro Tratado)
+//=verificargrafo Grafo0 OK
+
+== Deturpar Tipo Cabeca Grafo
+=deturpar Grafo0 DeturpaEspacoCabeca
+
+== Verificar Grafo (Detectar Tipo Errado Cabeca Grafo)
+=verificargrafo Grafo0 ErroDetectado
+
+//== Deturpar Tipo do Vertice Corrente
+//=deturpar Grafo0 DeturpaEspacoVerticeCorrente
+
+//== Verificar Grafo (Detectar Tipo Errado Vertice Corrente)
+//=verificargrafo Grafo0 ErroDetectado
+
+//== Deturpar Tamanho Cabeca Grafo
+//=deturpar Grafo0 DeturpaTamCabeca
+
+//== Verificar Grafo (Detectar Tamanho Errado Cabeca Grafo)
+//=verificargrafo Grafo0 ErroDetectado
+
+//== Deturpar Tamanho Vertice Corrente
+//=deturpar Grafo0 DeturpaTamVerticeCorrente
+
+//== Verificar Grafo (Detectar Tamanho Errado Vertice Corrente)
+//=verificargrafo Grafo0 ErroDetectado
+
+//== Deturpar Ponteiro Cabeca Grafo
+//=deturpar Grafo0 DeturpaPtCabecaNulo
+
+//== Verificar Grafo 
+//=verificargrafo Grafo0 ErroDetectado
+
+
+
+
+
+
+
+
+
+

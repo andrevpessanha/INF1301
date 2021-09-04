@@ -1,0 +1,37 @@
+**********************************************
+* TRABALHO DE PROGRAMAÇÃO MODULAR - RELATÓRIO
+**********************************************
+
+*****************************************
+* Aluno: André Vicente Pessanha		*
+* Turma: 3WA Prof. Alessandro		*
+* PUC-Rio - Depto. de Informática	*
+*****************************************
+
+Data	 | Horas Trabalhadas  |   Tipo Tarefa   	   |    Descrição da Tarefa Realizada
+
+
+22/10/17 |      4h            |   Codificar módulo 	   |    Criação e organização inicial do módulo Rede; Criação e Documentação da interface Rede.h
+25/10/17 |      6h            |   Codificar módulo         |    Implementação de funções do módulo Rede e organização da aparência da interface do sistema.
+27/10/17 |      8h            |   Codificar módulo         |    Implementação de funções do módulo Rede ; Organização e planejamento da aparência da interface do sistema e interação do usuário.
+28/10/17 |      14h           |   Codificar módulos        |    Implementação de funções do módulo Rede e Usuário ;  Implementação da funcionalidade de das opções 1; 3; 4 e 7 do Menu
+29/10/17 |      4h            |   Codificar módulos        |    Criação e Implementação da função GRA_VerificaVerticeExiste no módulo Grafo.
+30/10/17 |      7h            |   Codificar módulos        |    Implementação da funcionalidade das opções 2 e 5 do Menu, assim como tratamento de erros ; Correções no módulo Grafo.
+01/11/17 |      2h            |   Revisar módulo           |    Correções no módulo Rede e tratamento de exceções.
+02/11/17 |      12h           |   Codificar módulos        |    Implementação de funções do módulo Mensagem, Grafo e Usuário ; Implementação de funcionalidade da opção 6 do Menu com tratamento de exceções.
+03/11/17 |      3h            |   Codificar módulo         | 	Correções no módulo Rede ; Implementação da funcionalidade da opção 8 do Menu ; Criação das funções MEN_ExibeMensagens e USU_ExibeMsgEntreUsuarios.  
+04/11/17 |      10h           |   Codificar módulos        |    Implementação da funcionalidade da opção 9 do Menu ; Criação das funções GRA_ObtemArestasVerticeCorrente e USU_ExibeAmigosUsuario
+09/11/17 |      3h            |   Projetar                 |    Planejar e acrescentar no modelo físico as redundâncias para tornar o grafo auto verificável.
+10/11/17 |      10h           |   Codificar módulo         |    Implementar o uso das redundâncias e funções de verificação do Grafo.
+11/11/17 |      3h            |   Codificar módulo         |    Implementação da versão inicial da função de deturpação do Grafo.
+19/11/17 |      10h           |   Revisar módulo           |    Correções nas funções do módulo Grafo, Rede e Usuário relacionadas as opções 6 e 9 do Menu.
+20/11/17 |      2h            |   Especificar os módulos   |    Inclusão da documentação do módulo MENSAGEM.h e USUARIO.h
+21/11/17 |      8h            |   Revisar módulo           |    Correções na função GRA_ExcluiVerticeCorrente e na opção 9 do Menu.
+28/11/17 |      10h           |   Codificar módulo         |    Inclusão de contadores nas funções do módulo Grafo de acordo com o critério de completeza cobertura de arestas.
+02/12/17 |      12h           |   Codificar módulo         |    Implementação de funções do módulo mensagem, usuário e rede. Correções e testes.
+03/12/17 |      5h            |   Especificar os módulos   |    Revisão e inclusão da documentação das novas funções dos módulos mensagens e usuário.
+04/12/17 |      13h           |   Redigir script de teste  |    Implementação e criação dos testes de cobertura por arestas.
+05/12/17 |      8h            |   Revisar Especificações   |    Revisão da documentação do PDF e descrição da interface .h dos módulos.
+06/12/17 |      6h            |   Redigir script de teste  |    Implementação e criação do script de teste dos contadores e organização das pastas do trabalho.
+07/12/17 |      14h           |   Projetar  		   |    Criação de todos os batches, comps, readme.txt. 
+08/12/17 |      7h            |   Revisar módulos 	   |    Revisão completa da documentação, módulos, pastas e scripts. 
